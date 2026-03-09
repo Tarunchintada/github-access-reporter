@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: github-access-reporter
+
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json
+
+github:
+  token: ${GITHUB_TOKEN}
+  base-url: https://api.github.com
+  org: your-github-org
+  per-page: 100
